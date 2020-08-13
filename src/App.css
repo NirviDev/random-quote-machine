@@ -1,0 +1,131 @@
+body {
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#wrapper {
+  background: url("desk.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  /* position: fixed; */
+  
+}
+
+.panandinkwell {
+  background: url("penandinkwell.png") no-repeat center;
+  background-size: 60vh;
+  width: 100vw;
+  height: 25vh;
+  
+}
+
+.book {
+  background: url("book.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  width: 45vw;
+  margin: auto;
+}
+
+.title-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80%;
+  width: 45%;
+  
+}
+
+.footer a {
+  margin-left: 5px;
+}
+
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 87%;
+}
+
+#text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  
+  font-size: 20px;
+}
+
+#author {
+ align-self: flex-end;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button {
+  height: 35px;   
+}
+
+#new-quote {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  display: inline-block;
+  border: 1px solid inset;
+  border-bottom-right-radius: 25px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  width: 120px;
+  margin-right: 10px;
+}
+
+#new-quote span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#new-quote span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#new-quote:hover span {
+  padding-right: 25px;
+}
+
+#new-quote:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#tweet-quote {
+  justify-self: flex-start;
+  color: rgb(29, 161, 242);
+  margin-left: 60px;
+  opacity: 0.5;
+}
+
+#tweet-quote:hover {
+  opacity: 1;
+}
